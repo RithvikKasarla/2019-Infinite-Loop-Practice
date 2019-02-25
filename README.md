@@ -6,7 +6,7 @@ Slow start today, we need to improve for the next week. Here are the things as h
 1. Everyone do the first 10 problems from the 2018 test
 2. Review other persons's solutions and see if you can improve it.
 3. Read about the sets, lists and dictionaries, List comprehension and Dictionaty comprehension
-4. Familiarize with pytest
+4. Familiarize with pytest and basic git commands
 
 Be here by 6 PM next week, March 3rd.
 
