@@ -1,5 +1,3 @@
 with open("Prob01.in.txt") as input_file:
-    lines = input_file.readlines()[1:]
-    
-    for line in lines:
+    for line in input_file.readlines()[1:]:
         print("PASS" if int(line) >= 70 else "FAIL")
