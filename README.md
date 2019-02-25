@@ -1,5 +1,6 @@
 # 2019-Infinite-Loop-Practice
 
+## 2/24/2019 
 Slow start today, we need to improve for the nest week. Here are the things homework for the week 1...
 
 1. Everyone do the first 10 problems from the 2018 test
