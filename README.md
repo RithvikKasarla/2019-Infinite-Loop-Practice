@@ -10,5 +10,5 @@ Slow start today, we need to improve for the next week. Here are the things as h
 
 Be here by 6 PM next week, March 3rd.
 
-Make sure you have the dev environment set up on your laptop.
+Make sure you have the dev environment set up on your laptop (including pytest in visual studio).
 
