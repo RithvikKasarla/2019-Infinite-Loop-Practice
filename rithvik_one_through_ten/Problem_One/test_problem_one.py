@@ -1,11 +1,14 @@
 import pytest as pyt
 import problem_one as p1
-inp = {70,87,100}
-fail = {0,48,69}
-@ pyt.mark.parametrize("x",inp)
-def test_If_pass(x):
-    assert p1.Pass_Fail(x) == "PASS"
+passed = {70, 87, 100}
+failed = {0, 48, 69}
 
-@ pyt.mark.parametrize("y",fail)
-def test_If_fail(y):
-    assert p1.Pass_Fail(y) == "FAIL"
+
+@ pyt.mark.parametrize("x", passed)
+def test_if_pass(x):
+    assert p1.pass_fail(x) == "PASS"
+
+
+@ pyt.mark.parametrize("y", failed)
+def test_if_fail(y):
+    assert  p1.pass_fail(y) == "FAIL"
