@@ -6,7 +6,5 @@ def collatz(num):
     return ct + 1
 
 with open("Prob05.in.txt") as input_file:
-    lines = [line.strip() for line in input_file.readlines()[1:]]
-
-    for line in lines:
+    for line in [line.strip() for line in input_file.readlines()[1:]]:
         print("{}:{}".format(line, collatz(int(line))))
