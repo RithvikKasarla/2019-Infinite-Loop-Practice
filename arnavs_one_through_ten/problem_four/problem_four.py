@@ -16,19 +16,28 @@ with open("Prob04.in.txt") as input_file:
     lines = input_file.readlines()[1:]
 
     for line in lines:
-        moves = list({*line.strip().split()})
+        moves = line.strip().split()
 
-        print(moves, end=' ')
+        output = ""
+        while len(moves) != 1:
+            if len(set(moves)) == 3:
+                output = "NO WINNER"
+                break
+            for i in range(0, len(moves) - 1):
+                if moves[i] == moves[i + 1]:
+                    if len(moves) == 2:
+                        output = "NO WINNER"
+                    else:
+                        del moves[i]
+                elif beats[moves[i]] == moves[i + 1]:
+                    del moves[i + 1]
+                elif beats[moves[i + 1]] == moves[i]:
+                    del moves[i]
+                break
+            if len(output) > 0:
+                break
 
-        if len(moves) == 1:
-            print("NO WINNER")
-        if len(moves) == 2:
-            if moves[0] == moves[1]:
-                print("NO WINNER")
-            else:
-                if beats[moves[0]] == moves[1]:
-                    print(letter_to_name[moves[0]])
-                else:
-                    print(letter_to_name[moves[1]])
-        if len(moves) == 3:
-            print("NO WINNER")
+        if len(output) == 0:
+            print(letter_to_name[moves[0]])
+        else:
+            print(output)
