@@ -19,4 +19,4 @@ Some nice programming concepts were put in place, we still can make some improve
 
 #### This week please comeplte problem number 10 to 20 of the 2018 test.
 
-Will discuss the first 20 problmes next Sunday along with the pycharm tricks and tips.
+Will discuss the first 20 problmes next Sunday along with the pytest tricks and tips.
