@@ -14,7 +14,7 @@ Make sure you have the dev environment set up on your laptop (including pytest i
 
 ## 3/3/2019
 
-Good job Rithvik and Rishabh for completing the first 10 problems. 
+Good job Arnav and Rithvik for completing the first 10 problems. 
 Some nice programming concepts were put in place, we still can make some improvements on the programming methodology, lets discuss more details next week. 
 
 #### This week please comeplte problem number 10 to 20 of the 2018 test.
