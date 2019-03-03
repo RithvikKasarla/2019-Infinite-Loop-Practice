@@ -12,3 +12,11 @@ Be here by 6 PM next week, March 3rd.
 
 Make sure you have the dev environment set up on your laptop (including pytest in visual studio).
 
+## 3/3/2019
+
+Good job Rithvik and Rishabh for completing the first 10 problems. 
+Some nice programming concepts were put in place, we still can make some improvements on the programming methodology, lets discuss more details next week. 
+
+#### This week please comeplte problem number 10 to 20 of the 2018 test.
+
+Will discuss the first 20 problmes next Sunday along with the pycharm tricks and tips.
