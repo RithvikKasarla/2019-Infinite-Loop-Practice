@@ -11,4 +11,4 @@ def test_if_pass(x):
 
 @ pyt.mark.parametrize("y", failed)
 def test_if_fail(y):
-    assert  p1.pass_fail(y) == "FAIL"
+    assert p1.pass_fail(y) == "FAIL"
