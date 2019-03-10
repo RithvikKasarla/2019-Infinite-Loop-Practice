@@ -1,5 +1,3 @@
-# TODO: Fix (this fails on third from last test case)
-
 beats = {
     "R": "S",
     "S": "P",
