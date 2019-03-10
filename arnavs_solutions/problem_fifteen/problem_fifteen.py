@@ -1,9 +1,7 @@
 with open("Prob15.in.txt") as input_file:
-    lines = [line.strip() for line in input_file.readlines()[1:]]
-
-    for line in lines:
+    for line in input_file.readlines()[1:]:
         res = ""
-        for letter in line:
+        for letter in line.strip():
             t = ord(letter) - 64
             if letter in "ABCDE":
                 calculation = t + 6
