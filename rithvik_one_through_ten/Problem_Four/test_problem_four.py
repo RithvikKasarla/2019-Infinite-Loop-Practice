@@ -8,6 +8,6 @@ game = (("RPPPPPPPRP","PAPER"),
         ("P", "PAPER"),
         ("SSSSSSSSP","NO WINNER"))
 
-@pytest.mark.parameterize("Choice, answers", game)
-def test_winner(Choice, answer):
-    assert(p4.winner(Choice)) == answer
+@pytest.mark.parameterize("Choice, Answers", game)
+def test_winner(Choice, Answer):
+    assert(p4.winner(Choice)) == Answer
