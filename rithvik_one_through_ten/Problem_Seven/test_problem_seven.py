@@ -6,4 +6,4 @@ words = ((("Madam","AbBa","123321","$a3*3A$"),"TRUE"),(("RADAR","AbaB","SAGAS","
 
 @pytest.mark.paramerterize("x","answer")
 def test_palin(x,answer):
-    assert(palin(x)) == answer
+    assert(p7.palin(x)) == answer
