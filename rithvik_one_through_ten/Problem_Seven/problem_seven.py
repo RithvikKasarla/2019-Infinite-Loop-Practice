@@ -4,13 +4,8 @@ def isPalindrome(s):
         return True
     return False
 
-with open("Probinput.txt") as input_file:
-    lines = [line.strip() for line in input_file.readlines()]
-    test = lines [0]
-    lines = lines[1::]
-    wrong = []
-    place = 0
-    t=0
+
+def palin(line):
     for x in range(0,int(test.strip())):
         t = lines[0]
         print("lines:",lines)
@@ -32,4 +27,11 @@ with open("Probinput.txt") as input_file:
         print(z)
                 
             
-    
+with open("Probinput.txt") as input_file:
+    lines = [line.strip() for line in input_file.readlines()]
+    test = lines [0]
+    lines = lines[1::]
+    wrong = []
+    place = 0
+    t=0
+    palin(lines)
