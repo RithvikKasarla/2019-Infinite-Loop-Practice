@@ -1,7 +1,4 @@
-with open("ProbInput.txt") as input_file:
-    lines = input_file.readlines()[1:]
-for line in lines:
-    line.strip()
+def Math(line):
     line  = line.split(",")
     if int(line[0]>line[1]):
         x = int(line[0])
@@ -26,4 +23,9 @@ for line in lines:
         print("COPRIME")
     else:
         print("NOT COPRIME")
-    
+
+with open("ProbInput.txt") as input_file:
+    lines = input_file.readlines()[1:]
+for line in lines:
+    line.strip()
+    Math(line)
