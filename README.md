@@ -37,4 +37,11 @@ Make sure to follwo the 3 steps for solutioning the problem.
 #### Homework: Make sure to write test cases for all the 15 problems, and practice the testable code... make sure you got all correct, dont have to do the problems 4 remaing problems, but read and understand the problem to discuss in the class.
 Make sure to read up the python build in functions from the link from last week... 
 
+## 3/1719
 
+Things to learn:
+
+- Learn string/floating point formatting and rounding, etc.
+- Learn math functions in standard library.
+- Use REPL more for debugging.
+- Separate larger functions into smaller functions for easy testability.
