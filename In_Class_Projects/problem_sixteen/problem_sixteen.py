@@ -1,4 +1,5 @@
 def starpoints(coords):
+    
     pass
 
 with open("Prob16.in.txt") as inputFile:
