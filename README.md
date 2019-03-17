@@ -34,7 +34,7 @@ Make sure to follwo the 3 steps for solutioning the problem.
 3. Program design
 4. Develop the program iteratively...
 
-#### Homework: Make sure to write test cases for all the 15 problems, and practice testable testable code... make sure you got all correct, dont have to do the problems 4 remaing problems, but read and understand the problem to discuss in the class.
+#### Homework: Make sure to write test cases for all the 15 problems, and practice the testable code... make sure you got all correct, dont have to do the problems 4 remaing problems, but read and understand the problem to discuss in the class.
 Make sure to read up the python build in functions from the link from last week... 
 
 
