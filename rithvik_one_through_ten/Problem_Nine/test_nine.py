@@ -6,4 +6,4 @@ E = (("10,17", "17-10=7\n10-7=3\n7-3=4\n4-3=1\n3-1=2\n2-1=1\n1-1=0\nCOPRIME"),("
 @pytest.mark.parameterize("x","y")
 
 def test_math(x,y):
-    assert(Math(x)==y)
+    assert(p9.Math(x)==y)
