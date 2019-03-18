@@ -4,7 +4,12 @@ def Winner(s):
     d = {"X":1,"O":0,"-":-100}
     line= list(s)
     sk = int(math.sqrt(len(line)))
-    table = [ s[i: i + 3] for i in range(0,i,3) ]
+    table = [s[i:i+3] for i in range(0,len(s),3)]
+    for x in table:
+        x = list(x)
+    for a in range(len(table)):
+        for s in range(a):
+            table[a][s] = d[s]
     sumvert1 = 0
     sumvert2 = 0
     sumvert3 = 0
