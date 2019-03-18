@@ -5,10 +5,10 @@ def Winner(s):
     line= list(s)
     sk = int(math.sqrt(len(line)))
     table = [ s[i: i + 3] for i in range(0,i,3) ]
-    print(table)
     sumvert1 = 0
     sumvert2 = 0
     sumvert3 = 0
+    
     for x in table:
         sumhorz = 0
         for y in x:
