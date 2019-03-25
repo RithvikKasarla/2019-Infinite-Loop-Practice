@@ -45,3 +45,7 @@ Things to learn:
 - Learn math functions in standard library.
 - Use REPL more for debugging.
 - Separate larger functions into smaller functions for easy testability.
+
+##
+- How do combine a list like ["yes", "no", "maybe"] into "yes,no,maybe"? ",".join(list) doesn't work.
+ -- Nevermind I am just kinda dumb
