@@ -45,3 +45,10 @@ Things to learn:
 - Learn math functions in standard library.
 - Use REPL more for debugging.
 - Separate larger functions into smaller functions for easy testability.
+
+## 3/24/19
+#### Homework: Solve the first 10 problems of 2017 test. Make sure to write test cases for all the 10 problems...
+There are only 4 weeks left, we need to get bt serious. Highest score so far for the winners in 'Novice' section is 370.  **We need to beat that score** . So make sure to be  all be here for the next practice. 
+
+
+
