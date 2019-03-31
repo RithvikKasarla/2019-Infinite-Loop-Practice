@@ -1,0 +1,21 @@
+with open("input.txt") as inputFile:
+    lines = int(inputFile.readline().replace("\n", ""))
+    for line in range(0,lines):
+        li= int(inputFile.readline().replace("\n", ""))
+        data = inputFile.readline().replace("\n", "")
+        dat = data.split("],[")
+        names = dat[0][2:].split(",")
+        ages = dat[1].split(",")
+        insta = dat[2].split(",")
+        twitt = dat[3].split(",")
+        num = dat[4].split(",")
+        email = dat[5][:-2].split(",")
+        for i in range(0,li):
+            name = inputFile.readline().strip()
+            x = names.index(name)
+            print("Name: " + name)
+            print("Age: " + ages[x])
+            print("Instagram: " + insta[x])
+            print("Twitter: " + twitt[x])
+            print("Phone: " + num[x])
+            print("Email: " + email[x])
