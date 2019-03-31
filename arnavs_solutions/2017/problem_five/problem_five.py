@@ -8,9 +8,6 @@ def donor_sort(last_year: str, this_year: str):
     this_year_donors = sorted([person for person in this_year_donors if person not in both_years])
 
     return [','.join(last_year_donors), ','.join(both_years), ','.join(this_year_donors)]
-    
-
-
 
 with open("Prob05.in.txt") as input_file:
     lines = input_file.readlines()[1:]
