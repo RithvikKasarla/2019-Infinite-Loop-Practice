@@ -11,6 +11,7 @@ COLLATZ_CONJECTURE_TESTED = [
     (1000000, "1000000:153"),
 ]
 
+
 @pytest.mark.parametrize("inp, output", COLLATZ_CONJECTURE_TESTED)
 def test_solution(inp, output):
     assert collatz_conjecture(inp) == output

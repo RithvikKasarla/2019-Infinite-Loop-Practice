@@ -1,14 +1,6 @@
-beats = {
-    "R": "S",
-    "S": "P",
-    "P": "R"
-}
+beats = {"R": "S", "S": "P", "P": "R"}
 
-letter_to_name = {
-    "R": "ROCK",
-    "P": "PAPER",
-    "S": "SCISSORS"
-}
+letter_to_name = {"R": "ROCK", "P": "PAPER", "S": "SCISSORS"}
 
 with open("Prob04.in.txt") as input_file:
     lines = input_file.readlines()[1:]

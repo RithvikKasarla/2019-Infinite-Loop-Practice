@@ -8,8 +8,9 @@ COUNTED_VOWELS = [
     ("", 0),
     ("n0 v0w3ls", 0),
     ("aeiouaeiou", 10),
-    ("a", 1)
+    ("a", 1),
 ]
+
 
 @pytest.mark.parametrize("inp, output", COUNTED_VOWELS)
 def test_solution(inp, output):

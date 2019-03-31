@@ -12,6 +12,7 @@ PASS_OR_FAIL_GRADES = [
     (100, "PASS"),
 ]
 
+
 @pytest.mark.parametrize("inp, output", PASS_OR_FAIL_GRADES)
 def test_solution(inp, output):
     assert pass_or_fail(inp) == output

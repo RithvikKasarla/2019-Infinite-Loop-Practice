@@ -10,6 +10,7 @@ TESTED_LED_STATES = [
     ("BROKEN WORKING WORKING WORKING", "off red"),
 ]
 
+
 @pytest.mark.parametrize("inp, output", TESTED_LED_STATES)
 def test_solution(inp, output):
     assert determine_led_states(inp) == output

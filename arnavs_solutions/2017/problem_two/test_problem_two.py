@@ -8,8 +8,9 @@ REMOVE_LETTER_TEST_CASES = [
     ("fish 1", "fsh"),
     ("dog 2", "do"),
     ("a 0", ""),
-    ("abcde 4", "abcd")
+    ("abcde 4", "abcd"),
 ]
+
 
 @pytest.mark.parametrize("inp, output", REMOVE_LETTER_TEST_CASES)
 def test_remove_letter_at_index(inp, output):

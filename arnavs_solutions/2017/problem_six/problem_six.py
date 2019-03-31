@@ -24,8 +24,9 @@ ICAO_MAPPINGS = {
     "W": "Whiskey",
     "X": "Xray",
     "Y": "Yankee",
-    "Z": "Zulu"
+    "Z": "Zulu",
 }
+
 
 def icao_version(line: str):
     result = []
@@ -34,8 +35,9 @@ def icao_version(line: str):
         for char in word:
             new_word.append(ICAO_MAPPINGS[char[0].upper()])
         result.append("-".join(new_word))
-    
+
     return " ".join(result)
+
 
 with open("Prob06.in.txt") as input_file:
     lines = input_file.readlines()
@@ -49,6 +51,6 @@ with open("Prob06.in.txt") as input_file:
 
         for j in range(i + 1, i + num_current + 1):
             print(icao_version(lines[j]))
-        
+
         i += i + num_current
         current += 1

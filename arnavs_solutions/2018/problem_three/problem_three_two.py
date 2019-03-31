@@ -4,7 +4,7 @@ def correct_suffixes(inp):
     inp = int(inp[:-2])
 
     put_negative_sign = inp < 0
-    
+
     inp = abs(inp)
 
     number_reduced = inp % 100

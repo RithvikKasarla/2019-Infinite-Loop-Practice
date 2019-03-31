@@ -17,8 +17,9 @@ CORRECTED_SUFFIXES = [
     ("23th", "23rd"),
     ("100th", "100th"),
     ("404th", "404th"),
-    ("123th", "123rd")
+    ("123th", "123rd"),
 ]
+
 
 @pytest.mark.parametrize("inp, output", CORRECTED_SUFFIXES)
 def test_solution(inp, output):

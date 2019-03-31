@@ -16,7 +16,11 @@ with open("Prob07.in.txt") as input_file:
             if not palindrome(lines[k].lower()):
                 palindromes.append(k - i)
 
-        print("False - {}".format(", ".join(map(str, palindromes))) if palindromes else "True")
+        print(
+            "False - {}".format(", ".join(map(str, palindromes)))
+            if palindromes
+            else "True"
+        )
 
         i += sub_count + 1
         j += 1

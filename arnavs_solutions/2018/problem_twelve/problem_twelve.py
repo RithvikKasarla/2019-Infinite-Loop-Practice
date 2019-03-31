@@ -13,6 +13,8 @@ with open("Prob12.in.txt") as input_file:
                 primes[j] = False
 
             if len(removed) > 0:
-                 print("Prime {} Composite Set Size: {}".format(i, len(removed)))
+                print("Prime {} Composite Set Size: {}".format(i, len(removed)))
 
-        print("{{{}}}".format(",".join(str(i) for i, elem in enumerate(primes) if elem)))
+        print(
+            "{{{}}}".format(",".join(str(i) for i, elem in enumerate(primes) if elem))
+        )
