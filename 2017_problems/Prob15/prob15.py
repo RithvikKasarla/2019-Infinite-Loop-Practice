@@ -20,7 +20,7 @@ def poker(line):
         return("FOUR OF A KIND")
         
     if(any(x>=3 for x in l)):
-        z=l
+        z = l
         e = -1
         for p in range(len(l)):
             if l[p]>=3:
