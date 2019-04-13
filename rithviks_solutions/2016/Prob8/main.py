@@ -1,24 +1,37 @@
-def time(dist, rate):
-    dist = float(dist) * 1000000
-    rate = float(rate)
-    hours = dist / rate
-    days = int(hours/24)
-    hours = hours - 24 * days
-    minu = hours % 1
-    minu = minu *  60
-    sec = minu % 1
-    minu = int(minu - sec)
-    sec = sec * 60
-    if round(sec) == 60:
-        sec = 0
-        minu += 1
-    return [days, hours, round(minu), round(sec)]
+def sort(li):
+    return sorted(li)
+    
+def music(li):
+    new_li= []
+    for x in li:
+        y = x.split(" ")
+        if y[0] == "The":
+            s=""
+            for z in range(1,len(x)-4):
+                s+= y[z]
+            new_li.append(s)
+        else:
+            new_li.append(y[0])
+    s = sort(new_li)
+    fin = []
+    for z in new_li:
+        for u in li:
+            print("z",z)
+            print('u',u)
+            if z in u:
+                fin.append(u)
+    return fin
 
 
 with open("input.txt") as f:
-    lines = f.readlines()[1:]
-    for line in lines:
-        l = line.split(" ")
-        times = time(l[0],l[1])
-        print("Time to Mars: %s days, %d hours, %d minutes, %d seconds"%(times[0],times[1],times[2],times[3]))
-        
+    lines = f.readlines()
+    t = lines.pop(0)
+    for po in range(int(t)):
+        pas = []
+        x = lines.pop(0)
+        for q in range(int(x)):
+            pas.append(lines.pop(0).strip())
+        fin = music(pas)
+        for p in range(len(fin)):
+            print(p)
+            
