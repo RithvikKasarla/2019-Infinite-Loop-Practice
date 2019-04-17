@@ -15,6 +15,7 @@ def y_val(lad,zoom):
     
 def formation(x,y,z):
     return "http://tile.openstreetmap.org/"+str(z)+"/"+str(x)+"/"+str(y)+".png"
+    
 with open("input.txt") as f:
     lines = f.readlines()[1:]
     for line in lines:
