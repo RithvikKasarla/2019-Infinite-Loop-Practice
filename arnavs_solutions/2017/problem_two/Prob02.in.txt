@@ -1,5 +1,0 @@
-4
-puppy 0
-kitten 4
-fish 1
-dog 2
