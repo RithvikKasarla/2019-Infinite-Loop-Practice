@@ -1,6 +1,5 @@
-with open("Prob02.txt") as input_file:
-    lines = input_file.read().splitlines()[1:]
+test_cases = int(input())
 
-    for line in lines:
-        a, b = map(int, line.split())
-        print(a + b if a != b else (a + b) * 2)
+for _ in range(test_cases):
+    a, b = map(int, input().split())
+    print(a + b if a != b else (a + b) * 2)

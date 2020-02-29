@@ -1,19 +1,5 @@
-with open("Prob03.txt") as input_file:
-    lines = input_file.read().splitlines()[1:]
+test_cases = int(input())
 
-    for line in lines:
-        a, b = line.split(" ")
-
-        if a[0] == "t":
-            a = True
-        else:
-            a = False
-        if b[0] == "f":
-            b = True
-        else:
-            b = False
-
-        if a ^ b:
-            print("true")
-        else:
-            print("false")
+for _ in range(test_cases):
+    a, b = input().split(" ")
+    print("false" if a != b else "true")
