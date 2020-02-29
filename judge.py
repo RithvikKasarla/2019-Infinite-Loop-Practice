@@ -63,7 +63,6 @@ def main(argv: List[str]):
         return 1
 
     # Compare output line by line
-
     failed = []
     for i, (expected, captured) in enumerate(zip(expected_outputs, captured_outputs)):
         if expected != captured:
