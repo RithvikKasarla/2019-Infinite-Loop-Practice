@@ -3,4 +3,4 @@ with open("Prob02.txt") as input_file:
 
     for line in lines:
         a, b = map(int, line.split())
-        print(a + b)
+        print(a + b if a != b else (a + b) * 2)
