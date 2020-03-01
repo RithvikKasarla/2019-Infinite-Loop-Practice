@@ -1,22 +1,21 @@
-with open("Prob07.txt") as input_file:
-    lines = input_file.read().splitlines()
+test_cases = int(input())
 
-    i = 0
-    while i < len(lines):
-        i += 1
-        print(i)
-        in_list = int(lines[i])
-        values = []
+for _ in range(test_cases):
+    list_length = int(input())
 
-        for _ in range(in_list):
-            i += 1
-            values.append(float(lines[i]))
+    first_value = float(input())
+    brightness_values = [first_value]
+    maximum = first_value
+    minimum = first_value
 
-        maxNum = max(values)
-        minNum = max(values)
+    for _ in range(list_length - 1):
+        value = float(input())
+        if value > maximum:
+            maximum = value
+        if value < minimum:
+            minimum = value
+        brightness_values.append(value)
 
-        for value in values:
-            if minNum == maxNum:
-                print(0)
-            else:
-                print(round((value - minNum) / (maxNum - minNum) * 255))
+    for value in brightness_values:
+        converted = (value - minimum) / (maximum - minimum) * 255
+        print(round(converted))
