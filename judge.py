@@ -67,17 +67,17 @@ def main(argv: List[str]):
     for i, (expected, captured) in enumerate(zip(expected_outputs, captured_outputs)):
         if expected != captured:
             if verbose:
-                failed.append((expected, captured))
+                failed.append((i + 1, expected, captured))
             else:
                 print(f"FAILED! Line {i + 1} doesn't match in the output")
                 return 1
 
     if len(failed) != 0:
         print("FAILED\n")
-        print(f"Line # | Expected{' ': <41}| Actual")
+        print(f"Line # | Expected{' ': <41}| Captured")
         print("-" * 80)
-        for i, (expected, captured) in enumerate(failed):
-            print(f"{i + 1: <7}| {expected: <49}| {captured}")
+        for i, expected, captured in failed:
+            print(f"{i: <7}| {expected: <49}| {captured}")
         return 1
 
     print("SUCCESS")
