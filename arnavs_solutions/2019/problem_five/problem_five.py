@@ -1,19 +1,13 @@
-with open("Prob05.txt") as input_file:
-    lines = input_file.read().splitlines()
+test_cases = int(input())
 
-    for line in lines[1:]:
-        small, large, target = map(int, line.split(" "))
+for _ in range(test_cases):
+    small, large, target = map(int, input().split())
 
-        target -= small
+    while target > 4 and large > 0:
+        target -= 5
+        large -= 1
 
-        if target <= 0:
-            print("true")
-            continue
-
-        if small :
-
-
-        if target % 5 == 0:
-            print("true")
-        else:
-            print("false")
+    if small >= target:
+        print("true")
+    else:
+        print("false")
