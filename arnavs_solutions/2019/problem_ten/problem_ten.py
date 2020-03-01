@@ -4,10 +4,6 @@ for _ in range(test_cases):
     shift = int(input())
     encrypted_text = input()
 
-    if shift % 26 == 0:
-        print(encrypted_text)
-        continue
-
     for letter in encrypted_text:
         if letter == " ":
             new_letter = " "
