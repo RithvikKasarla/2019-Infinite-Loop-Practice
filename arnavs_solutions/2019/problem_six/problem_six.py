@@ -1,11 +1,11 @@
 from math import pi
 
-with open("Prob06.txt") as input_file:
-    lines = input_file.read().splitlines()
+test_cases = int(input())
 
-    earth_radius = 40075 / (2 * pi)
-    for line in lines[1:]:
-        altitude = int(line)
-        circumference = (earth_radius + altitude) * 2 * pi
+EARTH_RADIUS = 40075 / (2 * pi)
 
-        print(round(circumference, 1))
+for _ in range(test_cases):
+    altitude = int(input())
+    circumference = (EARTH_RADIUS + altitude) * 2 * pi
+
+    print(round(circumference, 1))
