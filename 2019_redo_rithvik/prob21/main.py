@@ -58,7 +58,7 @@ for x in range(num_tests):
         else:
             wall_points = walls[idx]
 
-            if ((point[0] > wall_points[0] and point[0] < wall_points[2]) or (point[0] <= wall_points[0] and point[0] >= wall_points[2])) and ((point[1] > wall_points[1] and point[1] < wall_points[3]) or (point[1] <= wall_points[1] and point[1] >= wall_points[3])):
+            if ((point[0] >= wall_points[0] and point[0] <= wall_points[2])  or (point[0] <= wall_points[0] and point[0] >= wall_points[2])) and ((point[1] >= wall_points[1] and point[1] <= wall_points[3])  or (point[1] <= wall_points[1] and point[1] >= wall_points[3])):
                 intersects = True
             else:
                 continue
