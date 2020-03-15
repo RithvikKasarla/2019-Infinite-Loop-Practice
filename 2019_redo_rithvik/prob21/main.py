@@ -4,7 +4,7 @@ for x in range(num_tests):
     l1 = input()
     l1= l1.strip().split(" ")
     walls = []
-    for x in range(l1(len(l1)-1)):
+    for x in range( l1[len(l1)-1] ):
         walls.append(input().strip())
     
     person = (int(l1[0]),int(l1[1]))
