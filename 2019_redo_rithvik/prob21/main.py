@@ -37,9 +37,13 @@ for x in range(num_tests):
     intersects = False
     for idx, wall in enumerate(WallEq):
         if PC_Slope != "UNDEFINED" and wall[0] != "UNDEFINED":
-            x = float(wall[1]- PC_B)/(PC_Slope - wall[0])
-            y = x * PC_Slope + PC_B
-            interestionpoints.append([x,y])
+            den = (PC_Slope - wall[0])
+            if den == 0:
+                interestionpoints.append([None,None])
+            else:
+                x = float(wall[1]- PC_B)/(PC_Slope - wall[0])
+                y = x * PC_Slope + PC_B
+                interestionpoints.append([x,y])
         elif PC_Slope == "UNDEFINED" and wall[0] == "UNDEFINED":
             interestionpoints.append([None, None])
         elif PC_Slope != "UNDEFINED" and wall[0] == "UNDEFINED":
