@@ -57,8 +57,10 @@ for x in range(num_tests):
             continue
         else:
             wall_points = walls[idx]
-
-            if ((point[0] >= wall_points[0] and point[0] <= wall_points[2])  or (point[0] <= wall_points[0] and point[0] >= wall_points[2])) and ((point[1] >= wall_points[1] and point[1] <= wall_points[3])  or (point[1] <= wall_points[1] and point[1] >= wall_points[3])):
+            wall_in = (((point[0] >= wall_points[0] and point[0] <= wall_points[2])or (point[0] <= wall_points[0] and point[0] >= wall_points[2])) and ((point[1] >= wall_points[1] and point[1] <= wall_points[3]) or (point[1] <= wall_points[1] and point[1] >= wall_points[3])))
+            person_in = (((point[0] >= person[0] and point[0] <= camera[0])or (point[0] <= person[0] and point[0] >= camera[0])) and ((point[1] >= person[1] and point[1] <= camera[1]) or (point[1] <= person[1] and point[1] >= camera[1])))
+            
+            if (wall_in and person_in):
                 intersects = True
             else:
                 continue
