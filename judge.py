@@ -37,7 +37,9 @@ def main(argv: List[str]):
     io_filename = f"Prob{problem_num:0>2}.txt"  # Official input/output filenames
 
     # Run solution script and report errors if any
-    with open(script_directory / "2019_io" / "inputs" / io_filename) as input_file:
+    with open(
+        (script_directory / "2019_io" / "inputs" / io_filename).resolve()
+    ) as input_file:
         returncode, captured_outputs, stderr = run_provided_file(
             Path.cwd() / provided_file, input_file
         )
@@ -48,7 +50,9 @@ def main(argv: List[str]):
                 print("\n".join(stderr))
             return 1
 
-    with open(script_directory / "2019_io" / "outputs" / io_filename) as input_file:
+    with open(
+        (script_directory / "2019_io" / "outputs" / io_filename).resolve()
+    ) as input_file:
         expected_outputs = input_file.read().splitlines()
 
     # Compare output lengths
