@@ -36,20 +36,29 @@ for x in range(num_tests):
     interestionpoints = []
     intersects = False
     for idx, wall in enumerate(WallEq):
-        # line + Vertical
-        # Vertical + LIne
-        # Vertical + Vertical
-        # Line + Line
         if PC_Slope != "UNDEFINED" and wall[0] != "UNDEFINED":
             x = float(wall[1]- PC_B)/(PC_Slope - wall[0])
             y = x * PC_Slope + PC_B
             interestionpoints.append([x,y])
         elif PC_Slope == "UNDEFINED" and wall[0] == "UNDEFINED":
-            continue
+            interestionpoints.append([None, None])
         elif PC_Slope != "UNDEFINED" and wall[0] == "UNDEFINED":
             interestionpoints.append([wall[1], (PC_Slope * wall[1] + PC_B) ])
         elif PC_Slope == "UNDEFINED" and wall[0] != "UNDEFINED":
             interestionpoints.append([PC_B, (wall[0] * PC_B + wall[1])])
     
-    
+    for idx, point in enumerate(interestionpoints):
         
+        if point == [None,None]:
+            continue
+        else:
+            wall_points = walls[idx]
+
+            if ((point[0] > wall_points[0] and point[0] < wall_points[2]) or (point[0] <= wall_points[0] and point[0] >= wall_points[2])) and ((point[1] > wall_points[1] and point[1] < wall_points[3]) or (point[1] <= wall_points[1] and point[1] >= wall_points[3])):
+                print("YES")
+                intersects = True
+            else:
+                continue
+
+    if not intersects:
+        print("No")
