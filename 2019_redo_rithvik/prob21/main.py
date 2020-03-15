@@ -59,10 +59,11 @@ for x in range(num_tests):
             wall_points = walls[idx]
 
             if ((point[0] > wall_points[0] and point[0] < wall_points[2]) or (point[0] <= wall_points[0] and point[0] >= wall_points[2])) and ((point[1] > wall_points[1] and point[1] < wall_points[3]) or (point[1] <= wall_points[1] and point[1] >= wall_points[3])):
-                print("NO")
                 intersects = True
             else:
                 continue
 
-    if not intersects:
+    if intersects:
+        print("NO")
+    else:
         print("YES")
