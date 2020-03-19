@@ -1,4 +1,4 @@
-from typing import List, NamedTuple
+from typing import List
 
 
 def num_surrounding_cells(grid: List[List[int]], row: int, column: int) -> int:
