@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from typing import Any, IO, List, Tuple
-from subprocess import run
 from pathlib import Path
+from subprocess import run
+from typing import IO, Any, List, Tuple
 
 
 def run_provided_file(
