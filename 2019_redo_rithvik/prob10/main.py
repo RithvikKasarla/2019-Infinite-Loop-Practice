@@ -9,6 +9,6 @@ for x in range(num):
             new = ord(char) - 97
             new -= sub
             new %= 26
-            un += chr(new+97)
+            un += chr(new + 97)
         un += " "
-    print(un)
+    print(un.rstrip())
