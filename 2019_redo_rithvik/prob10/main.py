@@ -7,8 +7,8 @@ for x in range(num):
         l = list(l)
         for char in l:
             new = ord(char) - (sub%26)
-            if new < 1:
-                new = 26 + new
+            if new < 97:
+                new = 122 + (97-new)
             un += chr(new)
         un += " "
     print(un)
