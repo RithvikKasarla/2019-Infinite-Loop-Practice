@@ -6,9 +6,9 @@ for x in range(num):
     for l in line:
         l = list(l)
         for char in l:
-            new = ord(char) - (sub%26)
-            if new < 97:
-                new = 122 + (97-new)
-            un += chr(new)
+            new = ord(char) - 97
+            new -= sub
+            new %= 26
+            un += chr(new+97)
         un += " "
     print(un)
